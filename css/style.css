@@ -1,29 +1,47 @@
-/********* MODIFIER CLASSES **********/
+/****** BODY *******/
+
+body{
+    margin: 0px;
+    font-family: Roboto;
+}
+
+/****** MODIFIER CLASSES *******/
 
 .margin-auto{
     margin: auto;
 }
 
-.text-sizing{
-    font-size: 20px;
+.text__sizing{
+    font-size: 18px;
 }
 
-.text_font{
+.title__sizing{
+    font-size: 25px;
+}
+
+.title-font{
     font-family: Shrikhand;
 }
 
-.title_font{
-    font-family: Roboto;
+.bold{
+    font-weight: bold;
 }
-/********* NAV **********/
+
+.center-text{
+    text-align: center;
+}
+
+
+/****** NAV *******/
 
 .nav-container{
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
 }
 
 .logo-container{
-    padding: 20px 0 20px 0;
+    padding: 10px 0 15px 0;
 }
 
 .container-logo__smaller{
@@ -32,5 +50,66 @@
 }
 
 .location-container{
-    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: #EAEAEA;
+    box-shadow: 0 -2px 0 0 #CECECE;
+}
+
+.navigation-location__smaller{
+    padding-right: 20px;
+}
+
+.explorer-container{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #F6F6F6;
+}
+
+.explorer-text__padding{
+    padding: 10px 20px 15px 20px;
+}
+
+.but-container{
+    margin: 20px auto 20px auto;
+}
+
+.nav-explore__button{
+    width: 220px;
+    height: 48px;
+    border-radius: 40px;
+    border: none;
+    background: linear-gradient(to bottom right,#FF79DA 15%, #9356DC);
+    color: white;
+}
+
+/****** FONCTIONNEMENT ******/
+
+.fonctionnement-container{
+    margin: 30px 20px 30px 20px;
+}
+
+.fonctionnement-card{
+    margin: 20px auto 20px auto;
+    width: 75%;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 0 1em  lightgray;
+    background-color: #F6F6F6;
+}
+
+.fonctionnement-circle__background{
+    padding: 2px 7px 2px 7px;
+    border-radius: 50%;
+    background-color: #9356DC;
+    color: white;
+    margin-left: -32px;
+}
+
+.fonctionnement-icon__margin{
+    margin: 0 15px 0 15px;
+    color: gray;
 }

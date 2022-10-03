@@ -3,20 +3,46 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand%7CRoboto">
         <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <Title>OhMyFood</Title>
     </head>    
     <body>
         <nav class="nav-container">
             <a class="logo-container margin-auto" href="index.html"><img alt="OhMyFood_logo" src="images/logo/ohmyfood@2x.svg" class="container-logo__smaller"></a>
-            <div class="location-container margin-auto">
-                <i class="fa-solid fa-location-dot fa-xl"></i>
-                <span class="text-sizing title_font">Paris, Belleville</span>
+            <div class="location-container">
+                <i class="fa-solid fa-location-dot navigation-location__smaller"></i>
+                <span class="text-sizing bold">Paris, Belleville</span>
+            </div>
+            <div class="explorer-container_background">
+                <div class="explorer-container">
+                    <span class="title__sizing bold explorer-text__padding center-text">Réservez le menu qui vous convient</span>
+                    <span class="text__sizing center-text">Découvrez des restaurants d'exception, séléctionnés par nos soins.</span>
+                    <div class="but-container">
+                        <input type="button" class="nav-explore__button" value="Explorer nos restaurants">
+                    </div>
+                </div>
+            </div>
+            <div class="fonctionnement-container">
+                <span class="title__sizing bold">Fonctionnement</span>
+                <div class="fonctionnement-card">
+                    <span class="fonctionnement-circle__background">1</span>
+                    <i class="fa-solid fa-mobile-screen-button fonctionnement-icon__margin"></i>
+                    <span class="text__sizing">Choisissez un restaurant</span>
+                </div>
+                <div class="fonctionnement-card">
+                    <span class="fonctionnement-circle__background">2</span>
+                    <i class="fa-solid fa-list-ul fonctionnement-icon__margin"></i>
+                    <span class="text__sizing">Composez votre menu</span>
+                </div>
+                <div class="fonctionnement-card">
+                    <span class="fonctionnement-circle__background">3</span>
+                    <i class="fa-solid fa-store fonctionnement-icon__margin"></i>
+                    <span class="text__sizing">Dégustez au restaurant</span>
+                </div>
             </div>
         </nav>
     </body>
-
 </html>
