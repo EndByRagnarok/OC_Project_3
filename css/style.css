@@ -1,0 +1,36 @@
+/********* MODIFIER CLASSES **********/
+
+.margin-auto{
+    margin: auto;
+}
+
+.text-sizing{
+    font-size: 20px;
+}
+
+.text_font{
+    font-family: Shrikhand;
+}
+
+.title_font{
+    font-family: Roboto;
+}
+/********* NAV **********/
+
+.nav-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container{
+    padding: 20px 0 20px 0;
+}
+
+.container-logo__smaller{
+    width: 170px;
+    height: 30px;
+}
+
+.location-container{
+    padding: 20px 0 20px 0;
+}
