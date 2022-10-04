@@ -7,7 +7,7 @@ body{
 
 /****** MODIFIER CLASSES *******/
 
-.margin-auto{
+.margin__auto{
     margin: auto;
 }
 
@@ -19,7 +19,7 @@ body{
     font-size: 25px;
 }
 
-.title-font{
+.title__font{
     font-family: Shrikhand;
 }
 
@@ -27,10 +27,13 @@ body{
     font-weight: bold;
 }
 
-.center-text{
+.center__text{
     text-align: center;
 }
 
+.padding__top{
+    padding-top: 5px;
+}
 
 /****** NAV *******/
 
@@ -93,7 +96,7 @@ body{
 }
 
 .fonctionnement-card{
-    margin: 20px auto 20px auto;
+    margin: 25px auto 25px auto;
     width: 75%;
     padding: 20px;
     border-radius: 18px;
@@ -112,4 +115,58 @@ body{
 .fonctionnement-icon__margin{
     margin: 0 15px 0 15px;
     color: gray;
+}
+
+/****** RESTAURANTS ******/
+
+.restaurants-container{
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+}
+
+.card-container{
+    width: 330px;
+    height: 250px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 1em  lightgray;
+    margin: 20px auto 20px auto;
+}
+
+.card-pic__sizing{
+    object-fit: cover;
+    width: 330px;
+    height: 180px;
+    border-radius: 20px 20px 0 0;
+}
+
+.description-container{
+    display: flex;
+    margin: 10px;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+.description-container__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.description-container__heart{
+    display: flex;
+}
+
+.card-heart__favorite{
+    display: none;
+    color: #9356DC;
+}
+
+.card-heart__not__favorite:active{
+    display: none;
+}
+
+.card-heart__favorite:active{
+    display:contents;
 }
