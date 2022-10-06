@@ -1,0 +1,19 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "OhMyFood project ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EndByRagnarok/OC_Project_3.git"
+  },
+  "author": "Monpas Johann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EndByRagnarok/OC_Project_3/issues"
+  },
+  "homepage": "https://github.com/EndByRagnarok/OC_Project_3#readme"
+}
