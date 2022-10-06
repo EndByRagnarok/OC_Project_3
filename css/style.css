@@ -117,6 +117,10 @@ body{
     color: gray;
 }
 
+.fonctionnement-card:active{
+    background-color: #F5EDFF;
+}
+
 /****** RESTAURANTS ******/
 
 .restaurants-container{
@@ -159,14 +163,16 @@ body{
 }
 
 .card-heart__favorite{
-    display: none;
-    color: #9356DC;
+    background: linear-gradient(#FF79DA,#9356DC);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.card-heart__not__favorite:active{
-    display: none;
+.card-heart__not__favorite{
+    background-color: white;
 }
 
-.card-heart__favorite:active{
-    display:contents;
+.card-heart__not__favorite:hover{
+    display: none;
 }
