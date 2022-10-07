@@ -91,6 +91,10 @@ body{
                 border: none;
                 background: linear-gradient(to bottom right,$secondary-color 15%, $primary-color);
                 color: white;
+
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -125,6 +129,10 @@ body{
         &:active{
             background-color: #F5EDFF;
         }
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
 
@@ -149,6 +157,10 @@ body{
             width: 330px;
             height: 180px;
             border-radius: 20px 20px 0 0;
+            
+            &:hover{
+                cursor: pointer;
+            }
         }
 
         &__description{
@@ -172,13 +184,17 @@ body{
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
 
+                &:hover{
+                    cursor: pointer;
+                }
+
                 &__not{
                     background-color: white;
-
-                    &:hover{
-                        display: none;
-                    }
                 }
+            }
+
+            &:hover &__favorite__not{
+                display: none;
             }
         }
     }
@@ -195,6 +211,12 @@ body{
 
     span{
         padding-bottom: 5px;
+        width: fit-content;
+
+        &:hover{
+            cursor: pointer;
+            color: lightblue;
+        }
     }
 
     &-logo__smaller{

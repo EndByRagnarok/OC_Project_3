@@ -75,6 +75,9 @@ body {
   background: linear-gradient(to bottom right, #FF79DA 15%, #9356DC);
   color: white;
 }
+.nav-explorer__button__visual:hover {
+  cursor: pointer;
+}
 
 /****** FONCTIONNEMENT ******/
 .fonctionnement {
@@ -102,6 +105,9 @@ body {
 .fonctionnement-card:active {
   background-color: #F5EDFF;
 }
+.fonctionnement-card:hover {
+  cursor: pointer;
+}
 
 /****** RESTAURANTS ******/
 .restaurant {
@@ -124,6 +130,9 @@ body {
   height: 180px;
   border-radius: 20px 20px 0 0;
 }
+.restaurant-card__pic__sizing:hover {
+  cursor: pointer;
+}
 .restaurant-card__description {
   display: flex;
   margin: 10px;
@@ -143,10 +152,13 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.restaurant-card__heart__favorite:hover {
+  cursor: pointer;
+}
 .restaurant-card__heart__favorite__not {
   background-color: white;
 }
-.restaurant-card__heart__favorite__not:hover {
+.restaurant-card__heart:hover .restaurant-card__heart__favorite__not {
   display: none;
 }
 
@@ -160,6 +172,11 @@ body {
 }
 .footer span {
   padding-bottom: 5px;
+  width: fit-content;
+}
+.footer span:hover {
+  cursor: pointer;
+  color: lightblue;
 }
 .footer-logo__smaller {
   padding: 20px 0 15px 0;
