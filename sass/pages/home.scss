@@ -1,0 +1,394 @@
+/****** MOBILE ******/
+
+body{
+    margin: 0px;
+    font-family: Roboto;
+}
+
+/****** NAV *******/
+
+.nav{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+    &-logo{
+        padding: 10px 0 15px 0;
+
+        &__smaller{
+            width: 170px;
+            height: 30px;
+        }
+    }
+
+    &-location{
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        background-color: #EAEAEA;
+        box-shadow: 0 -2px 0 0 #CECECE;
+
+        &__icon{
+            padding-right: 20px;
+        }
+    }
+
+    &-explorer{
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        background-color: #F6F6F6;
+
+        &__text__padding{
+            padding: 10px 20px 15px 20px;
+        }
+
+        &__button{
+            margin: 20px auto 20px auto;
+
+            &__visual{
+                width: 220px;
+                height: 48px;
+                border-radius: 40px;
+                border: none;
+                background: linear-gradient(to bottom right,$secondary-color 15%, $primary-color);
+                color: white;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+/****** FONCTIONNEMENT ******/
+
+.fonctionnement{
+    margin: 30px 20px 30px 20px;
+
+    &-card{
+        margin: 25px auto 25px auto;
+        width: 75%;
+        padding: 20px;
+        border-radius: 18px;
+        box-shadow: 0 0 1em  lightgray;
+        background-color: #F6F6F6;
+
+        &__circle__background{
+            padding: 2px 7px 2px 7px;
+            border-radius: 50%;
+            background-color: $primary-color;
+            color: white;
+            margin-left: -32px;
+        }
+        
+        &__icon{
+            margin: 0 15px 0 15px;
+            color: gray;
+        }
+
+        &:active{
+            background-color: #F5EDFF;
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+/****** RESTAURANTS ******/
+
+.restaurant{
+    background-color: #F6F6F6;
+    padding: 20px;
+
+    &-card{
+        width: 330px;
+        height: 250px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 0 1em  lightgray;
+        margin: 20px auto 20px auto;
+
+        &__pic__sizing{
+            object-fit: cover;
+            width: 330px;
+            height: 180px;
+            border-radius: 20px 20px 0 0;
+            
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        &__description{
+            display: flex;
+            margin: 10px;
+            margin-right: 20px;
+            justify-content: space-between;
+
+            &__text{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        &__heart{
+            display: flex;
+
+            &__favorite{
+                background: linear-gradient($secondary-color,$primary-color);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+                &__not{
+                    background-color: white;
+                }
+            }
+
+            &:hover &__favorite__not{
+                display: none;
+            }
+        }
+    }
+}
+
+/****** SMALLER PHONE ******/
+
+@media screen and (max-width:375px){
+
+    /****** FONCTIONNEMENT ******/
+
+    .fonctionnement{
+
+        &-card{
+            width: 82%;
+            box-shadow: 0 0 2em  lightgray;
+
+            &__icon{
+                margin: 0 10px 0 10px;
+            }
+        }
+    }
+
+
+    /****** RESTAURANTS ******/
+
+    .restaurant{
+        background-color: #F6F6F6;
+        padding: 15px;
+
+        &-card{
+            width: 250px;
+            height: 180px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 1em  lightgray;
+            margin: 20px auto 20px auto;
+
+            &__pic__sizing{
+                object-fit: cover;
+                width: 250px;
+                height: 120px;
+                border-radius: 20px 20px 0 0;
+                
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            &__description{
+                display: flex;
+                margin: 7px;
+                margin-right: 10px;
+                justify-content: space-between;
+
+                &__text{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+
+/****** TABLET ******/
+
+@media screen and (min-width:768px){
+
+    /****** NAV ******/
+
+    .nav{
+        margin-top: 40px;
+    
+        &-logo{
+            margin-bottom:30px;
+    
+            &__size{
+                width: 350px;
+                height: 50px;
+            }
+        }
+    
+        &-location{
+            padding: 40px;
+            box-shadow: 0 -4px 0 0 #CECECE;
+
+            &__icon{
+                font-size: 20px;
+                margin-top: 3px;
+            }
+        }
+    
+        &-explorer{
+            &__text__padding{
+                padding: 10px 20px 15px 20px;
+            }
+    
+            &__button{
+                margin: 30px auto 20px auto;
+    
+                &__visual{
+                    width: 350px;
+                    height: 80px;
+                    border-radius: 80px;
+
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    /****** FONCTIONNEMENT ******/
+
+    .fonctionnement{
+        margin: 30px 40px 30px 40px;
+
+        &-card{
+            width: 60%;
+            box-shadow: 0 0 2em  lightgray;
+
+            &__circle__background{
+                padding: 4px 9px 4px 9px;
+            }
+        }
+    }
+
+    /****** RESTAURANTS ******/
+
+    .restaurant{
+        padding: 30px 40px 30px 40px;
+
+        &-card{
+            width: 450px;
+            height: 330px;
+            border-radius: 40px;
+            box-shadow: 0 0 2em  lightgray;
+            margin: 30px auto 30px auto;
+
+            &__pic__sizing{
+                width: 450px;
+                height: 240px;
+                border-radius: 40px 40px 0 0;
+            }
+
+            &__description{
+                margin: 10px 30px 10px 30px;
+            }
+
+            &__heart{
+                font-size: 25px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+/****** DESKTOP ******/
+
+@media screen and (min-width:998px){
+    
+    
+    body{
+        margin: auto;
+        max-width: 1920px;
+    }
+
+    /****** FONC ******/
+
+    .fonctionnement{
+
+        margin: 80px;
+
+        &-card{
+            width: 30%;
+            margin: 25px 0 25px 0;
+            padding: 25px;
+
+            &__desktop__margin__1{
+                margin-left: 240px;
+            }
+            &__desktop__margin__2{
+                margin-left: 580px;
+            }
+            &__desktop__margin__3{
+                margin-left: 920px;
+            }
+
+            &__circle__background{
+                margin-left: -35px;
+            }
+        }
+    }
+
+    /****** RESTAURANTS ******/
+
+    .restaurant{
+        display: flex;
+        flex-direction: column;
+        padding: 80px;
+
+        &-card{
+
+            width: 600px;
+            height: 400px;
+            border-radius: 40px;
+
+            &__container{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            border-radius: 40px;
+            box-shadow: 0 0 2em  lightgray;
+            margin: 30px auto 30px auto;
+
+            &__pic__sizing{
+                width: 600px;
+                height: 300px;
+                border-radius: 40px 40px 0 0;
+            }
+
+            &__description{
+                display: flex;
+                margin: 10px 30px 10px 30px;
+            }
+
+            &__heart{
+                font-size: 25px;
+                margin-top: 5px;
+            }
+        }
+    }
+}

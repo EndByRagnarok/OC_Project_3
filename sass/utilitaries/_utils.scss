@@ -1,0 +1,56 @@
+/****** REUSED CLASSES *******/
+
+.margin__auto{
+    margin: auto;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.text__center{
+    text-align: center;
+}
+
+.padding__top{
+    padding-top: 5px;
+}
+
+.text__sizing{
+        font-size: 18px;
+}
+
+.title{
+    &__sizing{
+        font-size: 25px;
+    }
+    &__font{
+        font-family: Shrikhand;
+    }
+}
+
+/****** SMALLER PHONE ******/
+
+@media screen and (max-width:375px){
+    .text__sizing{
+        font-size: 15px;
+    }
+
+    .title__sizing{
+        font-size: 20px;
+    }
+}
+
+/****** TABLET/DESKTOP ******/
+
+@media screen and (min-width:768px){
+    .text__sizing{
+        font-size: 25px;
+    }
+
+    .title__sizing{
+        font-size: 35px;
+    }
+
+}
+
