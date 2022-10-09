@@ -27,7 +27,7 @@
 }
 
 /****** SMALLER PHONE ******/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 374px) {
   .text__sizing {
     font-size: 15px;
   }
@@ -44,49 +44,54 @@
     font-size: 35px;
   }
 }
-/****** MOBILE ******/
+/****** HOMEPAGE ******/
 body {
   margin: 0px;
   font-family: Roboto;
 }
 
-/****** NAV *******/
-.nav {
+.home {
+  /****** MOBILE ******/
+  /****** NAV *******/
+  /****** FONCTIONNEMENT ******/
+  /****** RESTAURANTS ******/
+}
+.home-nav {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
 }
-.nav-logo {
+.home-nav__logo {
   padding: 10px 0 15px 0;
 }
-.nav-logo__smaller {
+.home-nav__logo__size {
   width: 170px;
   height: 30px;
 }
-.nav-location {
+.home-nav__location {
   display: flex;
   justify-content: center;
   padding: 15px;
   background-color: #EAEAEA;
   box-shadow: 0 -2px 0 0 #CECECE;
 }
-.nav-location__icon {
+.home-nav__location__icon {
   padding-right: 20px;
 }
-.nav-explorer {
+.home-nav__explorer {
   padding: 30px;
   display: flex;
   flex-direction: column;
   margin: auto;
   background-color: #F6F6F6;
 }
-.nav-explorer__text__padding {
+.home-nav__explorer__text__padding {
   padding: 10px 20px 15px 20px;
 }
-.nav-explorer__button {
+.home-nav__explorer__button {
   margin: 20px auto 20px auto;
 }
-.nav-explorer__button__visual {
+.home-nav__explorer__button__visual {
   width: 220px;
   height: 48px;
   border-radius: 40px;
@@ -94,15 +99,13 @@ body {
   background: linear-gradient(to bottom right, #FF79DA 15%, #9356DC);
   color: white;
 }
-.nav-explorer__button__visual:hover {
+.home-nav__explorer__button__visual:hover {
   cursor: pointer;
 }
-
-/****** FONCTIONNEMENT ******/
-.fonctionnement {
+.home-fonctionnement {
   margin: 30px 20px 30px 20px;
 }
-.fonctionnement-card {
+.home-fonctionnement__card {
   margin: 25px auto 25px auto;
   width: 75%;
   padding: 20px;
@@ -110,91 +113,91 @@ body {
   box-shadow: 0 0 1em lightgray;
   background-color: #F6F6F6;
 }
-.fonctionnement-card__circle__background {
+.home-fonctionnement__card__circle__background {
   padding: 2px 7px 2px 7px;
   border-radius: 50%;
   background-color: #9356DC;
   color: white;
   margin-left: -32px;
 }
-.fonctionnement-card__icon {
+.home-fonctionnement__card__icon {
   margin: 0 15px 0 15px;
   color: gray;
 }
-.fonctionnement-card:active {
+.home-fonctionnement__card:active {
   background-color: #F5EDFF;
 }
-.fonctionnement-card:hover {
+.home-fonctionnement__card:hover {
   cursor: pointer;
 }
-
-/****** RESTAURANTS ******/
-.restaurant {
+.home-restaurant {
   background-color: #F6F6F6;
   padding: 20px;
 }
-.restaurant-card {
-  width: 330px;
+.home-restaurant__card {
+  width: 300px;
   height: 250px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 0 1em lightgray;
   margin: 20px auto 20px auto;
 }
-.restaurant-card__pic__sizing {
+.home-restaurant__card__pic__sizing {
   object-fit: cover;
-  width: 330px;
+  width: 300px;
   height: 180px;
   border-radius: 20px 20px 0 0;
 }
-.restaurant-card__pic__sizing:hover {
+.home-restaurant__card__pic__sizing:hover {
   cursor: pointer;
 }
-.restaurant-card__description {
+.home-restaurant__card__description {
   display: flex;
   margin: 10px;
   margin-right: 20px;
   justify-content: space-between;
 }
-.restaurant-card__description__text {
+.home-restaurant__card__description__text {
   display: flex;
   flex-direction: column;
 }
-.restaurant-card__heart {
+.home-restaurant__card__heart {
   display: flex;
 }
-.restaurant-card__heart__favorite {
+.home-restaurant__card__heart__favorite {
   background: linear-gradient(#FF79DA, #9356DC);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.restaurant-card__heart__favorite:hover {
+.home-restaurant__card__heart__favorite:hover {
   cursor: pointer;
 }
-.restaurant-card__heart__favorite__not {
+.home-restaurant__card__heart__favorite__not {
   background-color: white;
 }
-.restaurant-card__heart:hover .restaurant-card__heart__favorite__not {
+.home-restaurant__card__heart:hover .home-restaurant__card__heart__favorite__not {
   display: none;
 }
 
 /****** SMALLER PHONE ******/
-@media screen and (max-width: 375px) {
-  /****** FONCTIONNEMENT ******/
-  .fonctionnement-card {
+@media screen and (max-width: 374px) {
+  .home {
+    /****** FONCTIONNEMENT ******/
+    /****** RESTAURANTS ******/
+  }
+  .home-fonctionnement__card {
     width: 82%;
     box-shadow: 0 0 2em lightgray;
   }
-  .fonctionnement-card__icon {
+  .home-fonctionnement__card__icon {
     margin: 0 10px 0 10px;
   }
-  /****** RESTAURANTS ******/
-  .restaurant {
+  .home-restaurant {
     background-color: #F6F6F6;
     padding: 15px;
   }
-  .restaurant-card {
+  .home-restaurant__card {
     width: 250px;
     height: 180px;
     background-color: white;
@@ -202,128 +205,130 @@ body {
     box-shadow: 0 0 1em lightgray;
     margin: 20px auto 20px auto;
   }
-  .restaurant-card__pic__sizing {
+  .home-restaurant__card__pic__sizing {
     object-fit: cover;
     width: 250px;
     height: 120px;
     border-radius: 20px 20px 0 0;
   }
-  .restaurant-card__pic__sizing:hover {
+  .home-restaurant__card__pic__sizing:hover {
     cursor: pointer;
   }
-  .restaurant-card__description {
+  .home-restaurant__card__description {
     display: flex;
     margin: 7px;
     margin-right: 10px;
     justify-content: space-between;
   }
-  .restaurant-card__description__text {
+  .home-restaurant__card__description__text {
     display: flex;
     flex-direction: column;
   }
 }
 /****** TABLET ******/
 @media screen and (min-width: 768px) {
-  /****** NAV ******/
-  .nav {
+  .home {
+    /****** NAV ******/
+    /****** FONCTIONNEMENT ******/
+    /****** RESTAURANTS ******/
+  }
+  .home-nav {
     margin-top: 40px;
   }
-  .nav-logo {
+  .home-nav__logo {
     margin-bottom: 30px;
   }
-  .nav-logo__size {
+  .home-nav__logo__size {
     width: 350px;
     height: 50px;
   }
-  .nav-location {
+  .home-nav__location {
     padding: 40px;
     box-shadow: 0 -4px 0 0 #CECECE;
   }
-  .nav-location__icon {
+  .home-nav__location__icon {
     font-size: 20px;
     margin-top: 3px;
   }
-  .nav-explorer__text__padding {
+  .home-nav__explorer__text__padding {
     padding: 10px 20px 15px 20px;
   }
-  .nav-explorer__button {
+  .home-nav__explorer__button {
     margin: 30px auto 20px auto;
   }
-  .nav-explorer__button__visual {
+  .home-nav__explorer__button__visual {
     width: 350px;
     height: 80px;
     border-radius: 80px;
     font-size: 25px;
   }
-  /****** FONCTIONNEMENT ******/
-  .fonctionnement {
+  .home-fonctionnement {
     margin: 30px 40px 30px 40px;
   }
-  .fonctionnement-card {
+  .home-fonctionnement__card {
     width: 60%;
     box-shadow: 0 0 2em lightgray;
   }
-  .fonctionnement-card__circle__background {
+  .home-fonctionnement__card__circle__background {
     padding: 4px 9px 4px 9px;
   }
-  /****** RESTAURANTS ******/
-  .restaurant {
+  .home-restaurant {
     padding: 30px 40px 30px 40px;
   }
-  .restaurant-card {
+  .home-restaurant__card {
     width: 450px;
     height: 330px;
     border-radius: 40px;
     box-shadow: 0 0 2em lightgray;
     margin: 30px auto 30px auto;
   }
-  .restaurant-card__pic__sizing {
+  .home-restaurant__card__pic__sizing {
     width: 450px;
     height: 240px;
     border-radius: 40px 40px 0 0;
   }
-  .restaurant-card__description {
+  .home-restaurant__card__description {
     margin: 10px 30px 10px 30px;
   }
-  .restaurant-card__heart {
+  .home-restaurant__card__heart {
     font-size: 25px;
     margin-top: 5px;
   }
 }
 /****** DESKTOP ******/
 @media screen and (min-width: 998px) {
-  body {
+  .home {
     margin: auto;
     max-width: 1920px;
+    /****** FONC ******/
+    /****** RESTAURANTS ******/
   }
-  /****** FONC ******/
-  .fonctionnement {
+  .home-fonctionnement {
     margin: 80px;
   }
-  .fonctionnement-card {
+  .home-fonctionnement__card {
     width: 30%;
     margin: 25px 0 25px 0;
     padding: 25px;
   }
-  .fonctionnement-card__desktop__margin__1 {
+  .home-fonctionnement__card__desktop__margin__1 {
     margin-left: 240px;
   }
-  .fonctionnement-card__desktop__margin__2 {
+  .home-fonctionnement__card__desktop__margin__2 {
     margin-left: 580px;
   }
-  .fonctionnement-card__desktop__margin__3 {
+  .home-fonctionnement__card__desktop__margin__3 {
     margin-left: 920px;
   }
-  .fonctionnement-card__circle__background {
+  .home-fonctionnement__card__circle__background {
     margin-left: -35px;
   }
-  /****** RESTAURANTS ******/
-  .restaurant {
+  .home-restaurant {
     display: flex;
     flex-direction: column;
     padding: 80px;
   }
-  .restaurant-card {
+  .home-restaurant__card {
     width: 600px;
     height: 400px;
     border-radius: 40px;
@@ -331,25 +336,81 @@ body {
     box-shadow: 0 0 2em lightgray;
     margin: 30px auto 30px auto;
   }
-  .restaurant-card__container {
+  .home-restaurant__card__container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
-  .restaurant-card__pic__sizing {
+  .home-restaurant__card__pic__sizing {
     width: 600px;
     height: 300px;
     border-radius: 40px 40px 0 0;
   }
-  .restaurant-card__description {
+  .home-restaurant__card__description {
     display: flex;
     margin: 10px 30px 10px 30px;
   }
-  .restaurant-card__heart {
+  .home-restaurant__card__heart {
     font-size: 25px;
     margin-top: 5px;
   }
 }
+.restaurant-nav {
+  margin: 20px 0 20px 0;
+}
+.restaurant-nav__leave {
+  font-size: 1.5em;
+  color: black;
+  margin-left: 20px;
+}
+.restaurant-nav__logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.restaurant-nav__logo__size {
+  width: 170px;
+  height: 30px;
+  margin: auto auto auto 15%;
+}
+.restaurant-nav a {
+  text-decoration: none;
+}
+.restaurant-image {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: -50px;
+}
+.restaurant-menu {
+  position: relative;
+  background-color: #F6F6F6;
+  padding: 10px;
+  border-radius: 35px 35px 0 0;
+}
+.restaurant-menu__title {
+  margin: 10px;
+}
+.restaurant-menu__title__aligning {
+  display: flex;
+  justify-content: space-between;
+}
+.restaurant-menu__title__heart__favorite {
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant-menu__title__heart__favorite:hover {
+  cursor: pointer;
+}
+.restaurant-menu__title__heart__favorite__not {
+  background-color: #F6F6F6;
+}
+.restaurant-menu__title__heart:hover .restaurant-menu__title__heart__favorite__not {
+  display: none;
+}
+
 /****** FOOTER ******/
 .footer {
   background-color: #353535;
@@ -401,4 +462,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=style.css.map */

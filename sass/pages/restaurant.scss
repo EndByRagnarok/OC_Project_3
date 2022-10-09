@@ -1,0 +1,79 @@
+
+
+.restaurant{
+
+    &-nav{
+
+        margin: 20px 0 20px 0;
+    
+        &__leave{
+            font-size: 1.5em;
+            color: black;
+            margin-left: 20px;
+        }
+
+        &__logo{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            
+            &__size{
+                width: 170px;
+                height: 30px;
+
+                margin: auto auto auto 15%;
+            }
+        }
+
+        a{
+            text-decoration: none;
+        }
+    }
+
+    &-image{
+        height: 260px;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom:-50px;
+        
+    }
+
+    &-menu{
+        position: relative;
+        background-color: #F6F6F6;
+        padding: 10px;
+        border-radius: 35px 35px 0 0;
+
+        &__title{
+            margin: 10px;
+
+            &__aligning{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &__heart{
+                &__favorite{
+                    background: linear-gradient($secondary-color,$primary-color);
+                    background-clip: border-box;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+    
+                    &:hover{
+                        cursor: pointer;
+                    }
+    
+                    &__not{
+                        background-color: #F6F6F6;
+                    }
+    
+                    
+                }
+                &:hover &__favorite__not{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
