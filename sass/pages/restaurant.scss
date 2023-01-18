@@ -78,11 +78,33 @@
         }
 
         &__card{
+            display: flex;
             margin: 15px auto 15px auto;
-            padding: 11px;
             background-color: white;
             border-radius: 15px;
             box-shadow: 0 0 2em #CECECE;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+            
+            animation-duration: 1500ms;
+            animation-name: fadein;
+
+            @keyframes fadein{
+                from{
+                    opacity: 0;
+                    margin-top: 35px;
+                }
+                to{
+                    opacity: 1;
+                    margin-top: 15px;
+                }
+            }
+
+            &:hover{
+                cursor: pointer;
+                background-color: #F5EDFF;
+            }
 
             span{
                 margin: 5px 5px 0 5px;
@@ -91,6 +113,99 @@
             &__desc{
                 display: flex;
                 justify-content: space-between;
+                width: 345px;
+            }
+
+            &__overflow{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            &__content{
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                width: 82%;
+            }
+
+            &__price{
+                margin-right: 50px;
+            }
+
+            &__check{
+                scale: 0;
+                
+                &__color{
+                    color: white;
+                }
+            }
+
+            &:hover .restaurant-menu__card__desc{
+                animation-duration: 2000ms;
+                animation-name: slideout;
+            }
+
+            @keyframes slideout{
+                12%{
+                    width: 345px;
+                }
+                40%{
+                    width: 291px;
+                }
+                60%{
+                    width: 291px;
+                }
+                88%{
+                    width: 345px;
+                }
+            }
+
+            &:hover .restaurant-menu__card__check{
+                background-color: #8FDEC9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 16%; 
+                border-radius: 0 15px 15px 0;
+                margin-left: 100px;
+
+                &__color{
+                    
+                    display: inline-block;
+                    rotate: 180deg;
+
+                    transition: 1s;
+                    transform: rotate(180deg)
+                }
+                
+                animation-duration: 2000ms;
+                animation-name: slidein;
+
+            }
+
+            @keyframes slidein{
+                0%{
+                    margin-left: 60px;
+                    scale: 0;
+                }
+                10%{
+                    margin-left: 60px;
+                    scale: 1;
+                }
+                40%{
+                    margin-left: 0;
+                }
+                60%{
+                    margin-left: 0;
+                }
+                90%{
+                    scale: 1;
+                }
+                100%{
+                    margin-left: 60px;
+                    scale: 0;
+                }
             }
         }
 
@@ -118,15 +233,206 @@
                 background: linear-gradient(to bottom right,$secondary-color 15%, $primary-color);
                 justify-content: center;
                 color: white;
-    
+                box-shadow: 0 0 1em  gray;
                 &:hover{
                     cursor: pointer;
+                    background: linear-gradient(to bottom right,$secondary-color 35%, $primary-color);
+                    box-shadow: 0 0 2em  gray;
                 }
             }
         }
     }
-
-    
 }
 
+/****** TABLET ******/
 
+@media screen and (min-width:768px){
+    .restaurant{
+
+        &-nav__logo__size{
+            margin: auto auto auto 35%;
+        }
+
+        &-menu{
+
+            &__card{
+
+                &__margin{
+                    width: 540px;
+                    margin:auto;
+                    font-size: 20px;
+                }
+
+                &__desc{
+                    width: 520px;
+                }
+
+
+                &:hover .restaurant-menu__card__desc{
+                    animation-duration: 2000ms;
+                    animation-name: slideouttablet;
+                }
+    
+                @keyframes slideouttablet{
+                    12%{
+                        width: 520px;
+                    }
+                    40%{
+                        width: 440px;
+                    }
+                    60%{
+                        width: 440px;
+                    }
+                    88%{
+                        width: 520px;
+                    }
+                }
+    
+                &:hover .restaurant-menu__card__check{
+                    width: 80px; 
+                    margin-left: 160px;
+    
+                    &__color{
+                        color: white;
+                    }
+                    
+                    animation-duration: 2000ms;
+                    animation-name: slideintablet;
+    
+                }
+    
+                @keyframes slideintablet{
+                    0%{
+                        margin-left: 160px;
+                        scale: 0;
+                    }
+                    10%{
+                        margin-left: 160px;
+                        scale: 1;
+                    }
+                    40%{
+                        margin-left: 10px;
+                    }
+                    60%{
+                        margin-left: 10px;
+                    }
+                    90%{
+                        scale: 1;
+                    }
+                    100%{
+                        margin-left: 160px;
+                        scale: 0;
+                    }
+                }
+            }
+            
+
+            &__title__aligning{
+                width: 70%;
+                margin: auto;
+            }
+            
+            &__button{
+                
+                &__visual{
+                    margin: 50px auto 50px auto;
+                    width: 300px;
+                    height: 72px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:980px){
+
+    body{
+        max-width: 1920px;
+        margin: auto;
+    }
+
+    .restaurant{
+
+        &-nav__logo__size{
+            margin: auto auto auto 45%;
+        }
+
+        &-menu{
+
+            &__card{
+
+                &__margin{
+                    width: 60%;
+                }
+
+                &__desc{
+                    width: 1100px;
+                }
+
+                &:hover .restaurant-menu__card__desc{
+                    animation-duration: 2000ms;
+                    animation-name: slideoutdesktop;
+                }
+    
+                @keyframes slideoutdesktop{
+                    12%{
+                        width: 1100px;
+                    }
+                    40%{
+                        width: 1009px;
+                    }
+                    60%{
+                        width: 1009px;
+                    }
+                    88%{
+                        width: 1100px;
+                    }
+                }
+    
+                &:hover .restaurant-menu__card__check{
+                    width: 100px; 
+                    margin-left: 200px;
+    
+                    &__color{
+                        color: white;
+                    }
+                    
+                    animation-duration: 2000ms;
+                    animation-name: slideindesktop;
+    
+                }
+    
+                @keyframes slideindesktop{
+                    0%{
+                        margin-left: 200px;
+                        scale: 0;
+                    }
+                    10%{
+                        margin-left: 200px;
+                        scale: 1;
+                    }
+                    40%{
+                        margin-left: 100px;
+                    }
+                    60%{
+                        margin-left: 100px;
+                    }
+                    90%{
+                        scale: 1;
+                    }
+                    100%{
+                        margin-left: 200px;
+                        scale: 0;
+                    }
+                }
+            }
+            
+
+            &__title__aligning{
+                width: 60%;
+                margin: auto;
+            }
+        }
+    }
+}
