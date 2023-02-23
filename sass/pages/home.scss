@@ -119,25 +119,6 @@ body{
             box-shadow: 0 0 1em  lightgray;
             margin: 0 auto 0 auto;
 
-            &__new{
-                position: relative;
-                left: 64%;
-                top: 45px;
-
-                padding: 7px 10px 7px 10px;
-                color: #0B8D6E;
-                background-color: #99E2D0;
-            }
-
-            &__old{
-                position: relative;
-                left: 64%;
-                top: 45px;
-
-                padding: 7px 10px 7px 10px;
-                opacity: 0;
-            }
-
             &__pic__sizing{
                 object-fit: cover;
                 width: 300px;
@@ -366,18 +347,18 @@ body{
             margin: 80px;
 
             &__card{
-                width: 30%;
+                width: fit-content;
                 margin: 25px 0 25px 0;
                 padding: 25px;
 
                 &__desktop__margin__1{
-                    margin-left: 240px;
+                    margin-left: 5%;
                 }
                 &__desktop__margin__2{
-                    margin-left: 580px;
+                    margin-left: 30%;
                 }
                 &__desktop__margin__3{
-                    margin-left: 920px;
+                    margin-left: 55%;
                 }
 
                 &__circle__background{
@@ -429,14 +410,6 @@ body{
                     top: 60px;
                     height: 30px;
                     font-size: 25px;
-                }
-
-                &__old{
-                    display: none;
-                }
-
-                &__margin{
-                    margin-left: 22px;
                 }
             }
         }
