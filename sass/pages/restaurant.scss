@@ -53,39 +53,25 @@
             }
 
             &__heart{
-                &__favorite{
-                    background: linear-gradient($secondary-color,$primary-color);
-                    background-clip: border-box;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    line-height: 1em;
-                    
-                    &:hover{
-                        cursor: pointer;
-                        animation-duration: 1000ms;
-                        animation-name: fadein;
-                    }
 
-                    @keyframes fadein{
-                        from{
-                            opacity: 0;
-                            margin-top: 35px;
-                        }
-                        to{
-                            opacity: 1;
-                            margin-top: 15px;
-                        }
-                    }
-    
+                &__favorite{
+                    line-height: 1em;
+                    color: #F6F6F6;
+
                     &__not{
                         background-color: #F6F6F6;
                         line-height: 1em;
                     }
-    
-                    
                 }
+
                 &:hover &__favorite__not{
                     display: none;
+                }
+
+                &:hover &__favorite{
+                    cursor: pointer;
+                    transition: ease-in-out 0.75s;
+                    color: $secondary-color;
                 }
             }
         }
@@ -100,8 +86,7 @@
             overflow: hidden;
             width: 100%;
             
-            animation-duration: 1500ms;
-            animation-name: fadein;
+            animation: fadein 1500ms;
 
             @keyframes fadein{
                 from{
@@ -149,8 +134,7 @@
             }
 
             &:hover .restaurant-menu__card__content{
-                animation-duration: 2000ms;
-                animation-name: slideout;
+                animation:slideout 2s;
             }
 
             @keyframes slideout{
@@ -185,8 +169,7 @@
                     transform: rotate(180deg)
                 }
                 
-                animation-duration: 2000ms;
-                animation-name: slidein;
+                animation: slidein 2s;
 
             }
 
@@ -274,8 +257,7 @@
     
                 &:hover .restaurant-menu__card__check{
                     
-                    animation-duration: 2000ms;
-                    animation-name: slideintablet;
+                    animation: slideintablet 2000ms;
     
                 }
     
@@ -381,8 +363,7 @@
     
                 &:hover .restaurant-menu__card__check{
                     
-                    animation-duration: 2000ms;
-                    animation-name: slideindesktop;
+                    animation-name: slideindesktop 2000ms;
     
                 }
 

@@ -146,13 +146,12 @@ body{
                 display: flex;
 
                 &__favorite{
-                    background: linear-gradient($secondary-color,$primary-color);
-                    background-clip: border-box;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    color: #F6F6F6;
 
                     &:hover{
                         cursor: pointer;
+                        transition: ease-in-out 0.75s;
+                        color: $secondary-color;
                     }
 
                     &__not{
@@ -162,7 +161,7 @@ body{
 
                 &:hover &__favorite__not{
                     display: none;
-                }
+                }                
             }
         }
     }

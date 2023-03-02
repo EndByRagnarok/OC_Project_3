@@ -232,13 +232,12 @@ body {
   display: flex;
 }
 .home-restaurant__card__heart__favorite {
-  background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #F6F6F6;
 }
 .home-restaurant__card__heart__favorite:hover {
   cursor: pointer;
+  transition: ease-in-out 0.75s;
+  color: #FF79DA;
 }
 .home-restaurant__card__heart__favorite__not {
   background-color: white;
@@ -472,26 +471,8 @@ body {
   justify-content: space-between;
 }
 .restaurant-menu__title__heart__favorite {
-  background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   line-height: 1em;
-}
-.restaurant-menu__title__heart__favorite:hover {
-  cursor: pointer;
-  animation-duration: 1000ms;
-  animation-name: fadein;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-    margin-top: 35px;
-  }
-  to {
-    opacity: 1;
-    margin-top: 15px;
-  }
+  color: #F6F6F6;
 }
 .restaurant-menu__title__heart__favorite__not {
   background-color: #F6F6F6;
@@ -499,6 +480,11 @@ body {
 }
 .restaurant-menu__title__heart:hover .restaurant-menu__title__heart__favorite__not {
   display: none;
+}
+.restaurant-menu__title__heart:hover .restaurant-menu__title__heart__favorite {
+  cursor: pointer;
+  transition: ease-in-out 0.75s;
+  color: #FF79DA;
 }
 .restaurant-menu__card {
   display: flex;
@@ -509,8 +495,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
-  animation-duration: 1500ms;
-  animation-name: fadein;
+  animation: fadein 1500ms;
 }
 @keyframes fadein {
   from {
@@ -549,8 +534,7 @@ body {
   color: white;
 }
 .restaurant-menu__card:hover .restaurant-menu__card__content {
-  animation-duration: 2000ms;
-  animation-name: slideout;
+  animation: slideout 2s;
 }
 @keyframes slideout {
   9% {
@@ -573,8 +557,7 @@ body {
   align-items: center;
   border-radius: 0 15px 15px 0;
   scale: 0;
-  animation-duration: 2000ms;
-  animation-name: slidein;
+  animation: slidein 2s;
 }
 .restaurant-menu__card:hover .restaurant-menu__card__check__color {
   display: inline-block;
@@ -649,8 +632,7 @@ body {
     font-size: 20px;
   }
   .restaurant-menu__card:hover .restaurant-menu__card__check {
-    animation-duration: 2000ms;
-    animation-name: slideintablet;
+    animation: slideintablet 2000ms;
   }
   @keyframes slideintablet {
     0% {
@@ -729,8 +711,7 @@ body {
     }
   }
   .restaurant-menu__card:hover .restaurant-menu__card__check {
-    animation-duration: 2000ms;
-    animation-name: slideindesktop;
+    animation-name: slideindesktop 2000ms;
   }
   @keyframes slideindesktop {
     0% {
