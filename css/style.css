@@ -207,7 +207,7 @@ body {
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 0 1em lightgray;
-  margin: 0 auto 0 auto;
+  margin: 20px auto 20px auto;
 }
 .home-restaurant__card__pic__sizing {
   object-fit: cover;
